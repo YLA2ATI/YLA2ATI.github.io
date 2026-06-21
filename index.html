@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PowerKuy ModMenu</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta name="description" content="PowerKuy ModMenu — official site. Join our Discord and learn how to connect." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <span class="logo"><img src="logo.png" alt="PowerKuy logo" class="logo-img" /> PowerKuy</span>
+      <a class="nav-discord" href="#discord">Join Discord</a>
+    </nav>
+
+    <div class="hero-content">
+      <img src="logo.png" alt="PowerKuy ModMenu logo" class="hero-logo" />
+      <h1 class="title">PowerKuy <span>ModMenu</span></h1>
+      <p class="subtitle">The all-in-one mod menu. Powerful features, regular updates, and an active community.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#discord">Join the Discord</a>
+        <a class="btn btn-ghost" href="#connect">How to Connect</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Discord -->
+    <section id="discord" class="section">
+      <div class="card discord-card">
+        <h2>💬 Join our Discord</h2>
+        <p>Get support, updates, and connect with the community.</p>
+        <a class="btn btn-discord" href="https://discord.gg/drsnE45cRb" target="_blank" rel="noopener">
+          Open Discord Server
+        </a>
+      </div>
+    </section>
+
+    <!-- How to connect -->
+    <section id="connect" class="section">
+      <h2 class="section-title">How to Connect</h2>
+      <p class="section-sub">Pick your platform below and follow one of the methods.</p>
+
+      <div class="notice">
+        ⚠️ Requires a <strong>Legacy Account (GrowID)</strong>. We recommend creating a
+        <strong>fresh account for PowerKuy</strong> — don't reuse your main Growtopia login.
+        Using Gmail/Apple sign-in? Join the Discord and open a ticket for help.
+      </div>
+
+      <!-- PC -->
+      <div class="platform">
+        <h3 class="platform-title">🖥️ PC Setup</h3>
+        <div class="methods">
+          <article class="card method">
+            <div class="method-num">1</div>
+            <h3>⚡ Auto Setup <span class="tag">Recommended</span></h3>
+            <ol>
+              <li><strong>Download</strong> the setup file:
+                <a href="https://www.mediafire.com/file/or4hn9d02bpijws/GT_hosts.bat/file" target="_blank" rel="noopener">GT_hosts.bat</a>
+              </li>
+              <li><strong>Run as Administrator</strong> — right-click <code>GT_hosts.bat</code> → Run as administrator. It sets everything up automatically.</li>
+              <li><strong>Relaunch</strong> — log out and fully close Growtopia.</li>
+              <li>Reopen and log back in — you're in! 🎉</li>
+            </ol>
+          </article>
+
+          <article class="card method">
+            <div class="method-num">2</div>
+            <h3>🔧 Manual Setup</h3>
+            <p class="method-note">Use this if the auto setup didn't work.</p>
+            <ol>
+              <li>Go to <code>C:\Windows\System32\drivers\etc</code></li>
+              <li>Open the <code>hosts</code> file as Administrator</li>
+              <li>Add these two lines at the very end:
+                <pre>45.150.149.37 www.growtopia1.com
+45.150.149.37 www.growtopia2.com</pre>
+              </li>
+              <li>Save → log out of Growtopia → reopen &amp; log in.</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+
+      <!-- Android -->
+      <div class="platform">
+        <h3 class="platform-title">📱 Android Setup</h3>
+        <div class="methods">
+          <article class="card method">
+            <div class="method-num">1</div>
+            <h3>⚡ Modded APK <span class="tag">Recommended</span></h3>
+            <ol>
+              <li><strong>Uninstall</strong> your current Growtopia app.</li>
+              <li><strong>Download &amp; install</strong> the PowerKuy client:
+                <a href="https://www.mediafire.com/file/paser8c6zj28e7i/Growtopia.apk/file" target="_blank" rel="noopener">Growtopia.apk</a>.
+                Allow installs from unknown sources if prompted.</li>
+              <li><strong>Open</strong> the app, log in, and enjoy! ▶️</li>
+            </ol>
+          </article>
+
+          <article class="card method">
+            <div class="method-num">2</div>
+            <h3>🔧 PowerTunnel</h3>
+            <p class="method-note">Use this if the modded APK didn't work.</p>
+            <ol>
+              <li>Download <a href="https://powertunnel.en.uptodown.com/android/download" target="_blank" rel="noopener">PowerTunnel</a>.</li>
+              <li>Open PowerTunnel and tap the square icon (top right).</li>
+              <li>Scroll to <strong>Hosts</strong> and tap the settings icon next to it.</li>
+              <li>Tap <strong>Hosts File URL</strong>, paste <code>https://tinyurl.com/2kxx9mtr</code>, then tap OK.</li>
+              <li>Log out of Growtopia → log back in — you're in!</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+
+      <!-- iOS -->
+      <div class="platform">
+        <h3 class="platform-title">🍎 iOS Setup</h3>
+        <div class="methods">
+          <article class="card method">
+            <div class="method-num">1</div>
+            <h3>📲 Surge 5</h3>
+            <ol>
+              <li>Download <a href="https://apps.apple.com/us/app/surge-5/id1442620678" target="_blank" rel="noopener">Surge 5</a> from the App Store.</li>
+              <li>Launch Surge 5 and tap <strong>Default.conf</strong>.</li>
+              <li>Go to <strong>Import → Download Profile from URL</strong>, paste <code>https://tinyurl.com/2yshxfex</code>, then tap OK.</li>
+              <li>Tap <strong>Setup</strong> and allow the VPN configuration when prompted.</li>
+              <li>Open Growtopia → log out of your GrowID → log back in — you're in!</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> PowerKuy ModMenu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
