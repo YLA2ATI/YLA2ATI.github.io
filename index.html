@@ -137,16 +137,33 @@
       <!-- iOS -->
       <div class="platform">
         <h3 class="platform-title">🍎 iOS Setup</h3>
+        <p class="method-note">Two quick parts — do <strong>both</strong>, in order. Keep Growtopia closed during setup.</p>
         <div class="methods">
           <article class="card method">
             <div class="method-num">1</div>
-            <h3>📲 Surge 5</h3>
+            <h3>📜 Install the Certificate <span class="tag">Do this first</span></h3>
             <ol>
-              <li>Download <a href="https://apps.apple.com/us/app/surge-5/id1442620678" target="_blank" rel="noopener">Surge 5</a> from the App Store.</li>
-              <li>Launch Surge 5 and tap <strong>Default.conf</strong>.</li>
-              <li>Go to <strong>Import → Download Profile from URL</strong>, paste <code>https://powerkuy.com/ios.config</code>, then tap OK.</li>
-              <li>Tap <strong>Setup</strong> and allow the VPN configuration when prompted.</li>
-              <li>Open Growtopia → log out of your GrowID → log back in — you're in!</li>
+              <li><strong>⬇️ Download</strong> the certificate:
+                <a href="/PowerKuyRootCA.crt" rel="noopener">PowerKuyRootCA.crt</a>.
+                If <strong>Profile Downloaded</strong> doesn't appear, open <strong>Files</strong> and tap the downloaded certificate once.</li>
+              <li><strong>⚙️ Open</strong> Settings → General → <strong>VPN &amp; Device Management</strong>.</li>
+              <li><strong>Tap</strong> <strong>PowerKuy Root CA</strong>, then <strong>Install</strong>. Enter your passcode if asked and confirm until <strong>Profile Installed</strong> appears.</li>
+              <li><strong>⚙️ Go to</strong> Settings → General → About → <strong>Certificate Trust Settings</strong>.</li>
+              <li><strong>🛡️ Turn on Full Trust</strong> for <strong>PowerKuy Root CA</strong> and tap <strong>Continue</strong>.</li>
+            </ol>
+            <p class="method-note">Certificate installed? <strong>Full Trust must also be ON.</strong> Then continue to Part 2 below.</p>
+          </article>
+
+          <article class="card method">
+            <div class="method-num">2</div>
+            <h3>📲 Connect with Surge 5</h3>
+            <ol>
+              <li><strong>⬇️ Install</strong> <a href="https://apps.apple.com/us/app/surge-5/id1442620678" target="_blank" rel="noopener">Surge 5</a> from the App Store, then open it.</li>
+              <li>In Surge, choose <strong>import a configuration from URL</strong> and paste this profile address:
+                <pre>https://powerkuy.com/ios.config</pre>
+              </li>
+              <li><strong>🌐 Select</strong> the imported profile and <strong>start Surge</strong>. Allow the VPN configuration if iOS asks. Keep Surge running while you play.</li>
+              <li><strong>▶️ Open Growtopia</strong> → log out of your GrowID → log back in — you're in! 🎉</li>
             </ol>
           </article>
         </div>
