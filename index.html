@@ -86,6 +86,27 @@
             </ol>
             <p class="method-note">One file does it all (certificate + server redirect) — no antivirus steps needed. Run it any time to reconnect.</p>
           </article>
+
+          <article class="card method">
+            <div class="method-num">2</div>
+            <h3>🔧 Manual Setup</h3>
+            <p class="method-note">Prefer to do it by hand? Two parts — the certificate, then the hosts file.</p>
+            <ol>
+              <li><strong>Install the certificate</strong> — download
+                <a href="/PowerKuyRootCA.crt" rel="noopener">PowerKuyRootCA.crt</a>, double-click it →
+                <strong>Install Certificate…</strong> → <strong>Current User</strong> → Next →
+                <strong>Place all certificates in the following store</strong> → <strong>Browse</strong> →
+                pick <strong>Trusted Root Certification Authorities</strong> → OK → Next → Finish →
+                <strong>Yes</strong> on the security warning.</li>
+              <li><strong>Edit the hosts file</strong> — open
+                <code>C:\Windows\System32\drivers\etc\hosts</code> in Notepad run <strong>as Administrator</strong>,
+                add these two lines at the very end, then save:
+                <pre>45.150.149.37 www.growtopia1.com
+45.150.149.37 www.growtopia2.com</pre>
+              </li>
+              <li>Log out of Growtopia → reopen &amp; log in. 🎉</li>
+            </ol>
+          </article>
         </div>
       </div>
 
